@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>Anagram </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li{
+	float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+</style>
+
+<body>
+
+<fieldset>
+	
+	<a  href="https://www.iiit.ac.in/ "><img src="https://www.iiit.ac.in/img/iiit-new.png" style="float:top-left" width="150" height="100">
+	</a>
+
+	<a href="https://serc.iiit.ac.in/rdip" style="float:right; text-align: center; font-weight:bold;font-size: 30px;">RDIP
+	</a>
+
+	<ul>
+		<li style=""><a href="anagram.html">ANAGRAM check </a></li>
+	</ul>
+	<br><br><br>
+	<label>Enter your text:</label>
+	<input type="text" id="anagram_input" >		<!--onkeyup="alphabets_only()"; -->
+	<input type="text" id="anagram_test" >		<!--onkeyup="alphabets_only()"; -->
+	<br><br>
+	<button style="text-align:center margin:auto" type="button" onclick="anagram_find()">Anagram Check</button>
+	<br><br><br>
+
+	<h2 id = "anagram_result"> hi here is your result </h2>
+</fieldset>
+
+</body>
+
+<script src="all_fn.js"> </script>
+
+</html>

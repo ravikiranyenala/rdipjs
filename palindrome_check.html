@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li{
+	float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+</style>
+
+<body>
+
+<fieldset>
+	
+	<a  href="https://www.iiit.ac.in/ "><img src="https://www.iiit.ac.in/img/iiit-new.png" style="float:top-left" width="150" height="100">
+	</a>
+
+	<a href="https://serc.iiit.ac.in/rdip" style="float:right; text-align: center; font-weight:bold;font-size: 30px;">RDIP
+	</a>
+
+	<ul>
+		<li style=""><a href="palindrome_check.html">PALINDROME check </a></li>
+	</ul>
+	<br><br><br>
+	<label>Enter your text:</label>
+	<input type="text" id="palindrome_text" onkeyup="alphabets_only();">
+	<br><br>
+	<button style="text-align:center margin:auto" type="button" onclick="isPalindrome()">Palindrome Check</button>
+	<br><br><br>
+
+	<h2 id = "result"> </h2>
+</fieldset>
+
+</body>
+
+<script src="all_fn.js"> </script>
+
+</html>

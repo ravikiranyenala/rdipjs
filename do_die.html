@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li{
+	float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+</style>
+
+<body>
+
+<fieldset>
+	
+	<a  href="https://www.iiit.ac.in/ "><img src="https://www.iiit.ac.in/img/iiit-new.png" style="float:top-left" width="150" height="100">
+	</a>
+
+	<a href="https://serc.iiit.ac.in/rdip" style="float:right; text-align: center; font-weight:bold;font-size: 30px;">RDIP
+	</a>
+
+	<ul>
+		<li style=""><a href="do_die.html"> WHO WILL SURVIVE ? </a></li>
+	</ul>
+	<br><br><br>
+	<label>Random numbers are : (0-1000) :</label>
+	<p id = "rand_1"> </p>
+	<p id = "rand_2"> </p>
+	<!--
+	<input type="text" id="guess_1" >	
+	<input type="text" id="guess_2" >				
+	-->
+	<br><br>
+	<button style="text-align:center margin:auto" type="button" onclick="guess()">Let's play</button>
+	<br><br><br>
+
+	<h2 id = "survive"> </h2>
+</fieldset>
+
+</body>
+
+<script src="all_fn.js"> </script>
+
+</html>

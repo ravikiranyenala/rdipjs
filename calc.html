@@ -1,0 +1,51 @@
+<html> 
+<head> 
+<style>
+	.table_align{
+		background-color: skyblue;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+</style>
+</head> 
+<body style = "background-color: lightgreen; text-align: center;"> 
+	<div class = title >Basic Calculator</div> 
+	<table class="table_align"> 
+		<tr> 
+			<td colspan="4"><input type="text" id="result"/></td> 
+			<td><input type="button" value="c" onclick="clr()"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick="input_val('1')"/> </td> 
+			<td><input type="button" value="2" onclick="input_val('2')"/> </td> 
+			<td><input type="button" value="3" onclick="input_val('3')"/> </td> 
+			<td><input type="button" value="/" onclick="input_val('/')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="input_val('4')"/> </td> 
+			<td><input type="button" value="5" onclick="input_val('5')"/> </td> 
+			<td><input type="button" value="6" onclick="input_val('6')"/> </td> 
+			<td><input type="button" value="-" onclick="input_val('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="input_val('7')"/> </td> 
+			<td><input type="button" value="8" onclick="input_val('8')"/> </td> 
+			<td><input type="button" value="9" onclick="input_val('9')"/> </td> 
+			<td><input type="button" value="+" onclick="input_val('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick="input_val('.')"/> </td> 
+			<td><input type="button" value="0" onclick="input_val('0')"/> </td> 
+			<td><input type="button" value="=" onclick="find()"/> </td>  <!-- (document.getElementById("result").innerHTML=find())"/> </td>  -->
+			<td><input type="button" value="*" onclick="input_val('*')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="%" onclick="input_val('%')"/> </td>
+			<!--<td><input type="button" value="%" onclick="percent_find()"/> </td> -->
+			<td><input type="button" value="abs" onclick="abs_find()"/> </td> 
+			<td><input type="button" value="√x" onclick="sqrt_find()"/> </td> 
+		</tr> 
+	</table> 
+</body> 
+<script src = "all_fn.js"> 	</script> 
+</html> 

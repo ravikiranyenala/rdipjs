@@ -1,0 +1,81 @@
+<!--Registration page-->
+
+
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li{
+	float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+</style>
+
+<body>
+
+<fieldset>
+	
+	<a  href="https://www.iiit.ac.in/ "><img src="https://www.iiit.ac.in/img/iiit-new.png" style="float:top-left" width="150" height="100">
+	</a>
+
+	<a href="https://serc.iiit.ac.in/rdip" style="float:right; text-align: center; font-weight:bold;font-size: 30px;">RDIP
+	</a>
+
+	<ul>
+		<li style=""><a href="form.html">Registration Form</a></li>
+	</ul>
+	<br>
+	<div style="font-weight:bold; text-align:center; float:left">
+	<form  method="get">
+		<label>First Name :</label>&emsp;&emsp;
+		<input type="text" name="firstName" id="firstName" onkeyup="alphabets_allow();" required><br><br>
+
+		<label>Email :</label>&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="email" name="email" id="email" required><br><br>
+
+		<label>Phone Number :</label>
+		<input type="number" name="mobile" id="mobile" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" / required><br><br>
+		
+
+
+		<input type="submit" value="Submit" onclick="checkNum()">
+		<input type="reset">
+	</form>
+
+</div>
+
+
+
+
+	<br><br><br>
+
+
+</fieldset>
+
+</body>
+
+<script src="all_fn.js"> </script>
+
+</html>
